@@ -6,6 +6,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "react-hot-toast";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/SideBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,18 +34,25 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><StackProvider app={stackServerApp}><StackTheme>
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Toaster/>
-            <Navbar/>
-            {children}
-          </ThemeProvider>
-      </StackTheme></StackProvider></body>
+      >
+        <StackProvider app={stackServerApp}>
+          <StackTheme>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+
+                <Toaster />
+
+                <Navbar />
+
+              {children}
+            </ThemeProvider>
+          </StackTheme>
+        </StackProvider>
+      </body>
     </html>
   );
 }

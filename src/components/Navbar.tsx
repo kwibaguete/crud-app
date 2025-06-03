@@ -6,6 +6,7 @@ import ModeToggle from './ModeToggle'
 import { stackServerApp } from '@/stack'
 import { getUserDetails } from '@/actions/user.action'
 import { UserButton } from '@stackframe/stack'
+import { Sidebar } from './ui/sidebar'
 
 async function Navbar() {
     const user = await stackServerApp.getUser();
@@ -19,7 +20,7 @@ async function Navbar() {
                 {/*Logo */}
                 <div className="flex items-center"> 
                     <Link href="/" className="text-x1 font-bold text-primary font-mono tracking-wider">
-                        🌱 Plantventory
+                        🌱 Invytori
                     </Link>
                 </div>
 
