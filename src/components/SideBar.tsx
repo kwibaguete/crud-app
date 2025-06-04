@@ -22,7 +22,7 @@ const items = [
   },
   {
     title: "My Invytori",
-    url: "/plants",
+    url: "/my-invytori",
     icon: Box,
   },
   {
