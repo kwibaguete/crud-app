@@ -25,14 +25,14 @@ interface ComboboxProps {
 
 const plantCategories = [
   { value: "", label: "None" },
-  { value: "Indoor", label: "Indoor" },
-  { value: "Outdoor", label: "Outdoor" },
-  { value: "Succulent", label: "Succulent" },
-  { value: "Flowering", label: "Flowering" },
-  { value: "Herb", label: "Herb" },
-  { value: "Fern", label: "Fern" },
-  { value: "Tree", label: "Tree" },
-  { value: "Shrub", label: "Shrub" },
+  { value: "Food", label: "Food" },
+  { value: "Clothing", label: "Clothing" },
+  { value: "Home Goods", label: "Home Goods" },
+  { value: "Medicine", label: "Medicine" },
+  { value: "Beauty", label: "Beauty" },
+  { value: "Crafts", label: "Crafts" },
+  { value: "Hobby", label: "Hobby" },
+  { value: "Miscellaneous", label: "Miscellaneous" },
 ];
 
 export function Combobox({ value, onChange }: ComboboxProps) {

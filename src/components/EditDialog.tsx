@@ -129,7 +129,7 @@ export function EditDialog({plant}: EditDialogProps) {
           </div>
 
             {/*Image Upload*/}
-          <div className="py-5">
+          {/* <div className="py-5">
             <ImageUpload
               endpoint="postImage"
               value={formData.imageUrl}
@@ -137,7 +137,7 @@ export function EditDialog({plant}: EditDialogProps) {
                 handleChange("imageUrl", url);
               }}
             />
-          </div>
+          </div> */}
           
           <AlertDialogFooter>
             <AlertDialogCancel>Cancel</AlertDialogCancel>
