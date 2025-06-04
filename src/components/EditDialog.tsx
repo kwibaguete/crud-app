@@ -46,11 +46,11 @@ export function EditDialog({plant}: EditDialogProps) {
         try {
             const newPlant = await editPlant(plant.id, formData);
             console.log("plant edited: "+ newPlant);
-            toast.success("Plant edited successfully!")
+            toast.success("Item edited successfully!")
         } 
         catch (error) {
             console.error("error editing plant", error);
-            toast.error("Failed to edit plant.");
+            toast.error("Failed to edit item.");
         }
     };
 
@@ -65,16 +65,16 @@ export function EditDialog({plant}: EditDialogProps) {
         >
             <span>
                 <EditIcon className="w-4 h-4" />
-                Edit Plant
+                Edit Item
             </span>
         </Button>
 
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>Add a Plant</AlertDialogTitle>
+          <AlertDialogTitle>Edit an Item</AlertDialogTitle>
           <AlertDialogDescription>
-            Fill out the form below to add a new plant to your inventory.
+            Fill out the form below to edit a new item to your inventory.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <form onSubmit={handleSubmit}>
@@ -129,7 +129,7 @@ export function EditDialog({plant}: EditDialogProps) {
           </div>
 
             {/*Image Upload*/}
-          {/* <div className="py-5">
+          <div className="py-5">
             <ImageUpload
               endpoint="postImage"
               value={formData.imageUrl}
@@ -137,7 +137,7 @@ export function EditDialog({plant}: EditDialogProps) {
                 handleChange("imageUrl", url);
               }}
             />
-          </div> */}
+          </div>
           
           <AlertDialogFooter>
             <AlertDialogCancel>Cancel</AlertDialogCancel>

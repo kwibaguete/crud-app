@@ -15,14 +15,14 @@ datasource db {
 }
 
 model Plants {
-  id String @id @default(cuid())
-  name String
+  id          String   @id @default(cuid())
+  name        String
   description String?
-  category String
-  stock Int
-  price Float
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  userId String
-  imageUrl String?
+  category    String
+  stock       Int
+  price       Float
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  imageUrl    String?
 }

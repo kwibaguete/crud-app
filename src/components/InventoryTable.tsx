@@ -100,7 +100,7 @@ export default function InventoryTable({plants}: InventoryTableProps) {
     <div className="w-full">
         <div className="flex items-center gap-2 py-4">
             <div className="relative max-w-sm w-full">
-                <Input placeholder="Filter plants..." className="pl-10"
+                <Input placeholder="Filter items..." className="pl-10"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -114,7 +114,7 @@ export default function InventoryTable({plants}: InventoryTableProps) {
             <Table>
                 <TableHeader>
                     <TableRow>
-                    <TableHead>Plant ID</TableHead>
+                    <TableHead>Item ID</TableHead>
                     <TableHead>Name</TableHead>
                     <TableHead>Category</TableHead>
                     <TableHead>Price</TableHead>

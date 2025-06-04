@@ -21,8 +21,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Plantventory",
-  description: "Inventory for plants",
+  title: "Invytori",
+  description: "Inventory for your items",
 };
 
 export default function RootLayout({

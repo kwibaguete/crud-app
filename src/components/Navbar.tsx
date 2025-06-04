@@ -35,9 +35,9 @@ async function Navbar() {
           {/*Navbar components*/}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" className="flex items-center gap-2" asChild>
-              <Link href="/plants">
+              <Link href="/my-invytori">
                 <Sprout className="w-4 h-4" />
-                <span className="hidden lg:inline">Plants</span>
+                <span className="hidden lg:inline">My Inytori</span>
               </Link>
             </Button>
 

@@ -28,10 +28,10 @@ export default function DeleteDialog({ plant }: DeleteDialogProps) {
     try {
       await deletePlant(plant.id);
 
-      toast.success("Plant deleted successfully");
+      toast.success("Item deleted successfully");
     } catch (error) {
       console.error("Error deleting plant:", error);
-      toast.error("Failed to delete plant");
+      toast.error("Failed to delete item");
     }
   };
 
@@ -52,7 +52,7 @@ export default function DeleteDialog({ plant }: DeleteDialogProps) {
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription className="text-[15px]">
-            This action cannot be undone. This will permanently delete the plant
+            This action cannot be undone. This will permanently delete the item
             from our servers.
           </AlertDialogDescription>
         </AlertDialogHeader>

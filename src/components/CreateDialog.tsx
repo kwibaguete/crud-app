@@ -10,7 +10,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 import { Button } from "@/components/ui/button"
-import { Sprout } from "lucide-react"
+import { PackagePlus, Sprout } from "lucide-react"
 import { Combobox } from "./ui/combo-box";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
@@ -40,11 +40,11 @@ export function CreateDialog() {
         try {
             const newPlant = await createPlant(formData);
             console.log("plant created: "+ newPlant);
-            toast.success("Plant created successfully!")
+            toast.success("Item created successfully!")
         } 
         catch (error) {
             console.error("error creating plant", error);
-            toast.error("Failed to create plant.");
+            toast.error("Failed to create item.");
         }
     };
 
@@ -58,17 +58,17 @@ export function CreateDialog() {
             asChild
         >
             <span>
-                <Sprout className="w-4 h-4" />
-                Add Plant
+                <PackagePlus className="w-4 h-4" />
+                Add Item
             </span>
         </Button>
 
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>Add a Plant</AlertDialogTitle>
+          <AlertDialogTitle>Edit an Item</AlertDialogTitle>
           <AlertDialogDescription>
-            Fill out the form below to add a new plant to your inventory.
+            Fill out the form below to add a new item to your inventory.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <form onSubmit={handleSubmit}>
