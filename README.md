@@ -1,4 +1,4 @@
-A simple crud app.
+A simple crud app using Next.js & React, Prisma, Neon, PostgreSQL, and ShadCN UI :D
 
 ## Features
 - Authentication: Neon Auth (Stack Auth)
