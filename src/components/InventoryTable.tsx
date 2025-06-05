@@ -126,7 +126,7 @@ export default function InventoryTable({plants}: InventoryTableProps) {
                     {filteredPlants?.map((plant) => {
                         const slugifiedName = plant.name.toLowerCase().replace(/\s+/g, "-");
                         const slug = `${plant.id}--${slugifiedName}`;
-                        const plantUrl = `/plants/${slug}`;
+                        const plantUrl = `/my-invytori/${slug}`;
                         
                         return(
                     <TableRow key={plant.id} onClick={() => router.push(plantUrl)}>
